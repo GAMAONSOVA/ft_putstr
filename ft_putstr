@@ -6,8 +6,16 @@ void ft_putstr(char *s)
 
 int main()
 {
-    char *h = "asdfg";
-    ft_putstr(h);
+    char *h;
+    int i=0;
+    while(  *h!=0 )
+    {
+       h[i]+= 1;
+       i++;
+    }
+   
+    char *h[i] = "asdfg\0";
+    ft_putstr(*h);
 
     return 0;
 }
