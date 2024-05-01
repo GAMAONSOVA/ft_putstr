@@ -1,21 +1,18 @@
 #include <unistd.h>
+
 void ft_putstr(char *s)
 {
-    write(1, s, 6);
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
 }
 
-int main()
-{
-    char *h;
-    int i=0;
-    while(  *h!=0 )
-    {
-       h[i]+= 1;
-       i++;
-    }
-   
-    char *h[i] = "asdfg\0";
-    ft_putstr(*h);
-
-    return 0;
+int main(){
+   char *g ="skjufurddru6rsxi56sx8\0";
+   ft_putstr(g);
 }
